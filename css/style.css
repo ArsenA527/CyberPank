@@ -136,6 +136,7 @@ section:not(:first-child) {
 }
 
 .title {
+  margin-bottom: 25px;
   font-family: Archangelsk;
   font-weight: normal;
   font-size: 62px;
@@ -156,12 +157,6 @@ section:not(:first-child) {
   font-size: 18px;
   line-height: 34px;
   color: var(--blue);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 32px;
 }
 
 .corner-block {
@@ -242,7 +237,6 @@ section:not(:first-child) {
 }
 
 .hero-info__title {
-  margin-bottom: 25px;
   font-family: 'Archangelsk';
 }
 
@@ -254,25 +248,56 @@ section:not(:first-child) {
   background: var(--black);
 }
 
-.about__title {
-  margin-bottom: 25px;
-}
-
 .about__desc {
-  margin-bottom: 70px;
-  width: 952px;
+  margin-bottom: 60px;
+  max-width: 952px;
   color: var(--gray);
 }
 
 .about__images {
+  display: flex;
 }
 
 .about__left {
-  grid-column: 3 span;
+  margin-right: 32px;
+  min-width: 460px;
 }
 
-.about__image {}
+.about__image {
+  clip-path: polygon(11% 0, 100% 0, 100% 74%, 88% 100%, 0 100%, 0 24%);
+}
+
+.about__image:not(:last-child) {
+  margin-bottom: 27px;
+}
 
 .about__image--big {
-  grid-column: 5 span;
+  clip-path: polygon(6% 0, 100% 0, 100% 87%, 93% 100%, 0 100%, 0 11%);
+  width: calc(100% - 460px);
 }
+
+.game {
+  position: relative;
+  background: var(--black);
+}
+
+.game::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-image: url('../img/raster.png');
+  background-repeat: repeat-x;
+}
+
+.game__title {}
+
+.game__desc {}
+
+.game__content {}
+
+.game__form {}
+
+.form__input {}
