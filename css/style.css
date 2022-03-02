@@ -1,0 +1,169 @@
+
+@font-face {
+  font-family: "";
+  src: url('../fonts/.woff2') format("woff2"),
+    url('../fonts/.woff') format("woff");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --yellow: #f8f200;
+  --blue: #52bedc;
+  --gray: #777;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.input-reset::-webkit-search-decoration,
+.input-reset::-webkit-search-cancel-button,
+.input-reset::-webkit-search-results-button,
+.input-reset::-webkit-search-results-decoration {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1310px;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 63px;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.btn {
+  padding: 19px 50px;
+}
+
+.corner-block {
+
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.social__link--youtube { background-image: url('../img/youtube.svg');}
+.social__link--vk { background-image: url('../img/vk.svg');}
+.social__link--fb { background-image: url('../img/facebook.svg');}
+.social__link--twitter { background-image: url('../img/twitter.svg');}
+.social__link--twitch { background-image: url('../img/twitch.svg');}
+.social__link--instagram { background-image: url('../img/instagram.svg');}
+
+.hero {
+  height: 1000px;
+  background-image: url('../img/hero-1.jpg');
+}
+
+.hero__container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+.hero-info {
+
+}
