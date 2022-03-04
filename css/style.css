@@ -278,7 +278,7 @@ a {
 .game {
   padding-top: 80px;
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 139px;
   background: var(--black);
 }
 
@@ -328,7 +328,7 @@ a {
 
 
 .game__desc {
-  margin-bottom: 48px;
+  margin-bottom: 47px;
   max-width: 952px;
   color: var(--white);
 }
@@ -340,7 +340,7 @@ a {
 
 .game__form {
   padding-top: 73px;
-  max-width: 460px;
+  max-width: 480px;
 }
 
 .form__input {
@@ -366,7 +366,7 @@ a {
 }
 
 .form__btn {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
@@ -379,7 +379,7 @@ a {
   position: relative;
   display: block;
   margin-bottom: 35px;
-  padding: 40px 135px;
+  padding: 40px 115px;
   width: 100%;
   text-align: center;
   border: 1px dashed var(--gray);
@@ -396,6 +396,7 @@ a {
 }
 
 .form-label__text {
+  padding-left: 2px;
   display: block;
   margin-bottom: 3px;
   font-weight: 300;
@@ -417,18 +418,162 @@ a {
   display: block;
 }
 
-.checkbox__input {}
+.checkbox__visual {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--white)
+}
+
+.checkbox__visual::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox__input:checked ~ .checkbox__visual::before {
+  opacity: 1;
+}
 
 .checkbox__text {
+  padding-left: 20px;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
   color: var(--white);
 }
 
-
 .hp {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 63px;
   background: var(--yellow);
 }
+
+.hp__container {
+  display: flex;
+}
+
+.hp__left {
+  width: calc(50% - 32px);
+  margin-right: 48px;
+}
+
+.hp__right {
+  width: calc(50% - 32px);
+}
+
+.hp__logos {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hp__logo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logos-separater {
+  margin-right: 30px;
+  position: relative;
+  width: 90px;
+  height: 20px;
+}
+
+.logos-separater::before,
+.logos-separater::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid var(--black);
+}
+
+.logos-separater::before {
+  transform: translate(-4px, 6px) rotate(12deg);
+}
+
+.logos-separater::after {
+  transform: translate(-4px, 6px) rotate(-12deg);
+}
+
+.hp__desc {
+  margin-bottom: 23px;
+}
+
+.hp__list {
+  margin-bottom: 40px;
+}
+
+.hp__item {
+  padding-left: 44px;
+  height: 30px;
+  background-position: left center;
+  background-size: 32px 30px;
+}
+
+.hp__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.hp__btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--yellow);
+  background: var(--black);
+}
+
+.buy {
+  background: var(--black);
+}
+
+.buy__container {
+  display: flex;
+}
+
+.buy__image {}
+
+.buy__content {
+  padding: 70px 32px;
+}
+
+.buy__title {
+  margin-bottom: 25px;
+  color: var(--white);
+}
+
+.buy__subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--blue);
+}
+
+.buy__list {
+  margin-bottom: 70px;
+}
+
+.buy__item {
+  padding-left: 25px;
+  margin-bottom: 15px;
+  color: var(--white);
+  background-position: left center;
+  background-size: 32px 30px;
+}
+
+.platforms__list {}
+
+.platforms__item {}
+
+.platforms__link {}
