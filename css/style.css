@@ -643,3 +643,165 @@ a {
   line-height: 14px;
   color: var(--white);
 }
+
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .about__title {
+    max-width: 620px;
+  }
+
+  .about__desc {
+    max-width: 768px;
+  }
+
+  .about__images {
+    flex-direction: column;
+  }
+
+  .about__left {
+    margin: 0;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__image:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .about__image--big {
+    width: 100%;
+  }
+
+  .game-title__wrap {
+    max-width: 460px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game__title {
+    padding-left: 0;
+  }
+
+  .game__desc {
+    max-width: 460px;
+  }
+
+  .game__form {
+    max-width: 460px;
+  }
+
+  .game__image {
+    display: none;
+  }
+
+  .form-label__images {
+    display: none;
+  }
+
+  .hp__logos {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  .hp__logo:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+
+  .logos-separater {
+    margin: 0;
+  }
+
+  .buy__image {
+    width: 32.4%;
+  }
+
+  .buy__content {
+    padding-left: 340px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .title {
+    font-size: 30px;
+    line-height: 31px;
+  }
+
+  .btn {
+    padding: 10px 50px;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .header__logo {
+    width: 200px;
+    height: 50px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .social__link {
+    width: 25px;
+    height: 25px;
+  }
+
+  .hero {
+    height: 763px;
+  }
+
+  .hero-info__btn {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .header__container {
+    flex-direction: column;
+  }
+
+  .hero-info {
+    padding: 30px 38px;
+    width: calc(100% + 2 * 12px);
+    height: 207px;
+  }
+
+  .about__left {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about__image {
+    width: 100%;
+  }
+
+  .hp__container {
+    flex-direction: column;
+  }
+
+  .hp__left,
+  .hp__right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .hp__logos {
+    flex-direction: row;
+  }
+
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+}
