@@ -82,14 +82,27 @@
         <div class="about__images">
           <div class="about__left">
             <div class="about__image corner-block">
-              <img src="img/about-1.jpg" alt="Cyberpunk">
+              <picture>
+                <source srcset="img/about-1-sm.jpg" media="(max-width: 576px)">
+                <source srcset="img/about-1.jpg" media="(max-width: 1400px)">
+                <img src="img/about-1.jpg" class="card-image" alt="Cyberpunk">
+              </picture>
             </div>
             <div class="about__image corner-block">
-              <img src="img/about-2.jpg" alt="Cyberpunk">
+              <picture>
+                <source srcset="img/about-2-sm.jpg" media="(max-width: 576px)">
+                <source srcset="img/about-2.jpg" media="(max-width: 1400px)">
+                <img src="img/about-2.jpg" class="card-image" alt="Cyberpunk">
+              </picture>
             </div>
           </div>
           <div class="about__image about__image--big corner-block">
-            <img src="img/about-3.jpg" alt="Cyberpunk">
+            <picture>
+              <source srcset="img/about-3-sm.jpg" media="(max-width: 576px)">
+              <source srcset="img/about-3-xl.jpg" media="(max-width: 1024px)">
+              <source srcset="img/about-3.jpg" media="(max-width: 1400px)">
+              <img src="img/about-3.jpg" class="card-image" alt="Cyberpunk">
+            </picture>
           </div>
         </div>
       </div>
