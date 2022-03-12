@@ -676,6 +676,10 @@ a {
     clip-path: polygon(5% 0, 100% 0, 100% 87%, 94% 100%, 0 100%, 0 11%);
   }
 
+  .game__action {
+    margin-bottom: 16px;
+  }
+
   .game-title__wrap {
     max-width: 460px;
     flex-direction: column;
@@ -683,37 +687,90 @@ a {
   }
 
   .game__title {
+    margin-bottom: 0;
     padding-left: 0;
   }
 
   .game__desc {
+    margin-bottom: 14px;
     max-width: 460px;
   }
 
   .game__form {
-    max-width: 460px;
+    width: 460px;
   }
 
   .game__image {
-    display: none;
+    position: absolute;
+    right: 36px;
+    top: 160px;
+  }
+
+  .form-label {
+    margin-bottom: 29px;
+    padding: 50px 115px;
   }
 
   .form-label__images {
     display: none;
   }
 
+  .form__btn {
+    margin-bottom: 13px;
+  }
+
+  .checkbox__text {
+    padding-left: 2px;
+  }
+
+  .hp {
+    padding-bottom: 70px;
+  }
+
+  .hp__left {
+    padding-top: 40px;
+    width: calc(50% - 16px);
+    margin-right: 32px;
+  }
+
+  .hp__right {
+    width: calc(50% - 15px);
+  }
+
   .hp__logos {
-    margin-top: 25px;
+    margin-top: 20px;
     flex-direction: column;
   }
 
   .hp__logo:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .logos-separater {
     margin: 0;
+    margin-bottom: 21px;
+  }
+
+  .hp__desc {
+    width: 100%;
+    margin-bottom: 19px;
+  }
+
+  .logos-separater::before, .logos-separater::after {
+    left: -5px;
+  }
+
+  .hp__list {
+    margin-bottom: 35px;
+  }
+
+  .hp__item {
+    font-size: 18px;
+  }
+
+  .hp__item:not(:last-child) {
+    margin-bottom: 17px;
   }
 
   .buy__image {
@@ -721,7 +778,20 @@ a {
   }
 
   .buy__content {
-    padding-left: 340px;
+    padding-left: 36%;
+  }
+
+  .footer__top {
+    padding: 10px 0;
+  }
+
+  .footer__bottom {
+    padding: 10px 0;
+  }
+
+  .footer__left .footer__link:not(:last-child),
+  .footer__right .footer__link:not(:last-child) {
+    margin-right: 29px;
   }
 }
 
@@ -824,6 +894,37 @@ a {
     clip-path: polygon(16% 0, 100% 0, 100% 87%, 83% 100%, 0 100%, 0 12%);
   }
 
+  .game__action {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 135px;
+  }
+
+  .game__image {
+    right: 12px;
+    top: 120px;
+  }
+
+  .game__form {
+    padding-top: 44px;
+    width: 100%;
+  }
+
+  .form__input {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .form-label {
+    margin-bottom: 36px;
+    padding: 46px 40px;
+  }
+
+  .form__btn {
+    padding: 20px 46px;
+    margin-bottom: 11px;
+  }
+
   .hp__container {
     flex-direction: column;
   }
@@ -832,6 +933,10 @@ a {
   .hp__right {
     margin: 0;
     width: 100%;
+  }
+
+  .hp__left {
+    padding-top: 0;
   }
 
   .hp__logos {

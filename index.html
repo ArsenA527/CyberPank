@@ -109,7 +109,7 @@
     </section>
 
     <section class="game">
-      <div class="container ">
+      <div class="container">
         <div class="game-title__wrap">
           <span class="game__action"></span>
           <h2 class="title game__title">
@@ -142,10 +142,13 @@
             </label>
           </form>
 
-          <img src="img/xbox-ps5.png" alt="xbox-ps5" aria-hidden="true" class="game__image">
+          <picture>
+            <source srcset="img/xbox-ps5-sm.png" media="(max-width: 576px)">
+            <source srcset="img/xbox-ps5-xl.png" media="(max-width: 1400px)">
+            <img src="img/xbox-ps5.png" class="game__image" aria-hidden="true" alt="xbox-ps5">
+          </picture>
+
         </div>
-
-
 
       </div>
     </section>
@@ -160,7 +163,11 @@
             </a>
             <span class="logos-separater"></span>
             <a href="#" class="hp__logo">
-              <img src="img/cyberpunk.svg" alt="cyberpunk">
+              <picture>
+                <!-- <source srcset="img/xbox-ps5-sm.png" media="(max-width: 576px)"> -->
+                <source srcset="img/cyberpunk-xl.svg" media="(max-width: 1400px)">
+                <img src="img/cyberpunk.svg" alt="cyberpunk">
+              </picture>
             </a>
           </div>
         </div>
@@ -191,6 +198,7 @@
     <section class="buy">
       <div class="container buy__container">
         <picture>
+          <source srcset="img/covers-xl.jpg" media="(max-width: 1400px)">
           <img src="img/covers.jpg" alt="Cyberpunk" class="buy__image" aria-hidden="true">
         </picture>
         <div class="buy__content">
